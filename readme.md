@@ -5,7 +5,7 @@
 | Feature | Laravel 10.x | Django 5.x | Ruby on Rails 7.x | Comparison |
 |---------|--------------|------------|-------------------|------------|
 | **Founded** | 2011 by Taylor Otwell | 2005 by Adrian Holovaty and Simon Willison | 2004 by David Heinemeier Hansson | Rails is the oldest, followed by Django, then Laravel. Each has benefited from years of community contributions and refinement. |
-| **Popularity** | GitHub stars: 77.5k+ | GitHub stars: 77.9k+ | GitHub stars: 55.3k+ | All three frameworks are widely adopted. |
+| **Popularity (GH Stars)** | 77.5k+ | 77.9k+ | 55.3k+ | All three frameworks are widely adopted. |
 | **Marketing & Community** | Active / Energetic / Strong | Silent / Calm  | Active  | The creators of Laravel and Rails leads the community while the creators of Django are silent in comparison |
 | **Funding** | Funded by its amazing first party tools | Donations to Django Software Foundation  | Donations Rails Foundation  | Laravel has a solid funding mechanism, Rails also recieve active funded from 37Signals the company behind it, Django operates through donations |
 | **Architecture** | MVC (Model-View-Controller) | MTV (Model-Template-View) | MVC (Model-View-Controller) | Laravel and Rails follow traditional MVC, while Django's MTV is similar but emphasizes templates. |
