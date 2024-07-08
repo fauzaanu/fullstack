@@ -1,7 +1,7 @@
 | Feature | Laravel 10.x | Django 5.x | Ruby on Rails 7.x | Comparison |
 |---------|--------------|------------|-------------------|------------|
 | **Founded** | 2011 by Taylor Otwell | 2005 by Adrian Holovaty and Simon Willison | 2004 by David Heinemeier Hansson | Rails is the oldest, followed by Django, then Laravel. Each has benefited from years of community contributions and refinement. |
-| **Popularity** | Very popular in PHP community, GitHub stars: 73k+ | Popular in Python community, GitHub stars: 69k+ | Highly popular, GitHub stars: 52k+ | All three frameworks are widely adopted, with Laravel leading in GitHub stars, followed closely by Django, then Rails. |
+| **Popularity** | GitHub stars: 77.5k+ | GitHub stars: 77.9k+ | GitHub stars: 55.3k+ | All three frameworks are widely adopted. |
 | **Architecture** | MVC (Model-View-Controller) | MTV (Model-Template-View) | MVC (Model-View-Controller) | Laravel and Rails follow traditional MVC, while Django's MTV is similar but emphasizes templates. |
 | **ORM** | Eloquent (Active Record pattern) | Django ORM (Data Mapper pattern) | Active Record | Eloquent and Rails' Active Record are similar, offering intuitive interfaces. Django's ORM provides more explicit query control. |
 | **Database Migrations** | Artisan command-line tool | Django's `makemigrations` and `migrate` commands | Rails migrations | Django's migrations are tightly coupled with models, allowing for automatic generation and seamless schema updates. This tight integration often results in faster development cycles. Laravel and Rails also offer powerful migration systems, but require more manual intervention. |
