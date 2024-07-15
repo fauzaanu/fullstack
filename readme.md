@@ -219,6 +219,10 @@ All three frameworks can scale effectively with proper architecture.
 
 ## Deployment Ease
 
-**Laravel** offers managed services like Forge and Vapor for easy deployment. **Django** deployment can be more
-challenging but is supported by tools like Gunicorn and WSGI. **Ruby on Rails** pioneered easy deployment with Heroku
-and has many established deployment patterns.
+**Laravel** offers managed services like Forge and Vapor for easy deployment. 
+
+**Django** as a framework does not offer much assitance when it comes to deployment. 
+Some popular solutions include cookie-cutter django and the many different dockerrized templates. 
+Deploying django to [railway](https://railway.app?referralCode=NC4Tt6) is the most simple and fast aproaches. (Dockerization not nessesary)
+
+**Ruby on Rails** has many established deployment patterns.
