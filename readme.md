@@ -194,20 +194,28 @@ of gems. **Laravel** is known for rapid adoption of new features, and **Django**
 
 ## Learning Curve
 
-**Laravel** and **Ruby on Rails** are generally considered easier for beginners. **Django** has a steeper initial
-learning curve but offers powerful capabilities once mastered. Laravel and Rails are seen as more beginner-friendly,
-while Django's explicitness can be initially challenging but leads to a deeper understanding.
+**Laravel** and **Ruby on Rails** are generally considered easier for beginners. 
+
+**Django** has a steeper initial learning curve but offers powerful capabilities with a lot of productivity gains once mastered.
 
 ## Performance
 
-All three frameworks perform well when optimized. **Django** often edges out for database-intensive operations. *
-*Laravel** has tools like Laravel Octane for optimization, and **Ruby on Rails** has focused on performance improvements
-in recent versions.
+All three frameworks perform well when optimized.
+
+**Django** often edges out for database-intensive operations. 
+
+**Laravel** has tools like Laravel Octane for optimization, and **Ruby on Rails** has focused on performance improvements in recent versions.
 
 ## Scalability
 
-All three frameworks can scale effectively with proper architecture. **Django** and **Ruby on Rails** have more
-high-profile, high-traffic use cases demonstrating their scalability.
+All three frameworks can scale effectively with proper architecture.
+
+**Django** and **Ruby on Rails** have more high-profile, high-traffic use cases demonstrating their scalability.
+
+1. Instagram - Django - [Carl Meyer about Django @ Instagram at Django: Under The Hood 2016](https://youtu.be/lx5WQjXLlq8)
+2. Shopify - Rails - [RailsConf 2022 - Shopify](https://youtu.be/p_C6BcKX0qs?list=PLr8d6l1sJufdKr-d_SG7lrycsHwMMEDPl)
+3. ...
+
 
 ## Deployment Ease
 
