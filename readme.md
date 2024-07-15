@@ -95,7 +95,7 @@ Learn more from the book, [Patterns of Enterprise Application Architecture](http
 
 **Ruby on Rails** has its own migration system.
 
-It was Ruby on Rails who pioneered the concept of database migrations in web frameworks.
+It was Ruby on Rails who pioneered and popularized the concept of database migrations in web frameworks.
 
 Django automates migrations throught its ORM. A django developer in most cases would simply edit models.py, and run
 makemigrations and migrate to update the schema without any manual migration file creation.
