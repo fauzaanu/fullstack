@@ -85,6 +85,8 @@ Mapper pattern.
 
 **Ruby on Rails** also uses the Active Record pattern.
 
+Learn more from the book, [Patterns of Enterprise Application Architecture](https://www.amazon.com/Patterns-Enterprise-Application-Architecture-Martin/dp/0321127420) where Martin Fowler coined the terms [Active Record](https://en.wikipedia.org/wiki/Active_record_pattern) and [Data Mapper patterns](https://en.wikipedia.org/wiki/Data_mapper_pattern).
+
 ## Database Migrations
 
 **Laravel** uses the Artisan command-line tool for migrations.
