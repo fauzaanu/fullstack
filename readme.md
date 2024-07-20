@@ -356,6 +356,6 @@ All three frameworks can scale effectively with proper architecture.
 
 **Django** as a framework does not offer much assitance when it comes to deployment. 
 Some popular solutions include cookie-cutter django and the many different dockerrized templates. 
-Deploying django to [railway](https://railway.app?referralCode=NC4Tt6) is the most simple and fast aproaches. (Dockerization not nessesary)
+Deploying django to [railway](https://railway.app?referralCode=NC4Tt6) is one of the most simple and fast aproach. (Dockerization not nessesary due to NIXPACKS)
 
 **Ruby on Rails** has many established deployment patterns.
