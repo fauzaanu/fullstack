@@ -13,19 +13,20 @@ place.
 5. [Architecture](#Architecture)
 6. [ORM](#ORM)
 7. [Database Migrations](#Database-Migrations)
-8. [Routing](#Routing)
-9. [Project Structure](#Project-Structure)
-10. [Template Engine](#Template-Engine)
-11. [Authentication](#Authentication)
-12. [API Development](#API-Development)
-13. [Admin Interface](#Admin-Interface)
-14. [Testing](#Testing)
-15. [Asynchronous Processing](#Asynchronous-Processing)
-16. [Community and Ecosystem](#Community-and-Ecosystem)
-17. [Learning Curve](#Learning-Curve)
-18. [Performance](#Performance)
-19. [Scalability](#Scalability)
-20. [Deployment Ease](#Deployment-Ease)
+8. [Forms](#Forms)
+9. [Routing](#Routing)
+10. [Project Structure](#Project-Structure)
+11. [Template Engine](#Template-Engine)
+12. [Authentication](#Authentication)
+13. [API Development](#API-Development)
+14. [Admin Interface](#Admin-Interface)
+15. [Testing](#Testing)
+16. [Asynchronous Processing](#Asynchronous-Processing)
+17. [Community and Ecosystem](#Community-and-Ecosystem)
+18. [Learning Curve](#Learning-Curve)
+19. [Performance](#Performance)
+20. [Scalability](#Scalability)
+21. [Deployment Ease](#Deployment-Ease)
 
 ## Founded
 
@@ -100,6 +101,16 @@ It was Ruby on Rails who pioneered and popularized the concept of database migra
 Django has automated migrations
 _Django automates migrations by making migrations be a replica of the models.py file within each of the apps. The state of the current database schema can be observed from models.py at all times. Automating stuff through ORM is common in django and is also present in 
 model forms._
+
+## Forms
+
+Django comes with model forms, Another area where django automates through its ORM. Forms are generated as a replica of all the fields on the database and comes with built in form validation. To get models forms working very little code is needed. The amount of code written is further reduced through generic views in django.
+
+_Generic views in django are views provided by the framework for really common operations (eg: CRUD). Connecting the view to a model and adding a template is the only code that is written in this case. The development speedups that django provides through generic views are really useful for MVPs and hackathons_
+
+Ruby on rails have form_for helper which generates a form html based on models, quite like django forms and includes validation as well. Rails require a little bit more manual effort than django however to get it setup.
+
+Laravel unlike rails and django lacks tight integration between models and forms. Laravel Collective provides a form builder package for easier form creation. There are third party packages in Laravel ecosystem that implements django model forms. Laravel does offer good form validation and handling capabilities.
 
 ## Routing
 
