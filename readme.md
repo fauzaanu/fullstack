@@ -37,9 +37,9 @@ The goal of this repo is to provide a basic understanding of all three framework
 
 ## Popularity
 
-**Laravel** has 77.5k+ stars on GitHub.
+**Laravel** has 77.6k+ stars on GitHub.
 
-**Django** has 77.9k+ stars.
+**Django** has 78.1k+ stars.
 
 **Ruby on Rails** has 55.3k+ stars.
 
