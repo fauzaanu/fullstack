@@ -97,34 +97,156 @@ Learn more from the book, [Patterns of Enterprise Application Architecture](http
 
 It was Ruby on Rails who pioneered and popularized the concept of database migrations in web frameworks.
 
-Django automates migrations throught its ORM. A django developer in most cases would simply edit models.py, and run
-makemigrations and migrate to update the schema without any manual migration file creation.
-
-Laravel and Rails lack automated ORM migrations but offer streamlined processes as well. Laravel provides easier
-rollbacks and seeding. Rails features reversible migrations and detailed generators.
+Django has automated migrations
+_Django automates migrations by making migrations be a replica of the models.py file within each of the apps. The state of the current database schema can be observed from models.py at all times. Automating stuff through ORM is common in django and is also present in 
+model forms._
 
 ## Routing
 
-Rails has a single routes.rb file. The naming conventions are similar to Laravel.
+Rails has a single routes.rb file.
+Laravel uses files within the routes directory for routes.
+Django uses multiple urls.py files within its apps, and is mapped to a view
 
-Django uses multiple urls.py files within its apps, and is mapped to a view function or class.
-
-Laravel typically uses files in the routes directory and allows middleware to be assigned in the route definition
-contrary to Django and Rails.
+Laravel allows middleware to be assigned in the route definition contrary to rails and django
 
 ## Project Structure
 
-Django follows a project-and-app structure. The main project and its multiple apps would each have its own urls,
-templates and static files directories.
+Django follows a project and app structure. Each project would have multiple apps. 
+Each app would have their own static files, templates, urls, views, models and even the database migrations.
+Project would also have a urls.py file which connects all the apps by including their routes.
+This app driven structure in django speeds up development due to it being really easy to jump around code, making reusable apps, etc.
 
-Laravel uses a centralized approach, with application logic residing in the `app/` directory. Configuration files are
-separate, and views are stored in `resources/`.
+```
+finance_project/
+│
+├── finance_project/
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+│
+├── income/
+│   ├── migrations/
+│   ├── static/
+│   ├── templates/
+│   │   └── income/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+│
+├── expense/
+│   ├── migrations/
+│   ├── static/
+│   ├── templates/
+│   │   └── expense/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+│
+├── templates/
+│   └── base.html
+│
+├── static/
+│
+├── manage.py
+└── requirements.txt
+```
 
-Rails adopts a convention-over-configuration philosophy, with a predefined directory structure. Models, views, and
-controllers are organized in their respective folders within the `app/` directory.
+Ruby on Rails follows a convention-over-configuration approach with a well-defined project structure. A Rails application is organized into several directories, including app (containing models, views, controllers, helpers, and assets), config (for routes, database configuration, and environments), db (for database migrations and seeds), and test (for unit and integration tests). The app directory is further subdivided to separate concerns, with models handling data and business logic, controllers managing request flow, and views rendering the user interface. Rails uses a centralized routing system in config/routes.rb to map URLs to controller actions. This structured approach promotes code organization, maintainability, and adherence to the MVC (Model-View-Controller) pattern, allowing developers to quickly navigate and understand the codebase.
 
-Django's app-driven model is about creating modular, reusable 'apps' which can be plugged into different projects
-seamlessly. Laravel and Rails are more about a centralized approach to application development.
+```
+finance_app/
+│
+├── app/
+│   ├── controllers/
+│   │   ├── incomes_controller.rb
+│   │   └── expenses_controller.rb
+│   ├── models/
+│   │   ├── income.rb
+│   │   └── expense.rb
+│   ├── views/
+│   │   ├── incomes/
+│   │   ├── expenses/
+│   │   └── layouts/
+│   ├── helpers/
+│   └── assets/
+│
+├── config/
+│   ├── routes.rb
+│   └── database.yml
+│
+├── db/
+│   └── migrations/
+│
+├── lib/
+│
+├── log/
+│
+├── public/
+│
+├── test/
+│
+├── vendor/
+│
+├── Gemfile
+└── Rakefile
+```
+
+Laravel, employs a modular and intuitive project structure. The main application logic resides in the app directory, which contains subdirectories for HTTP controllers, models, and various service classes. Views are stored in the resources/views directory, while routes are defined in the routes directory, typically separated into web.php for web routes and api.php for API routes. Laravel uses a powerful ORM called Eloquent, with model classes typically placed in app/Models. The database directory houses migrations and seeders for database management. Public assets are stored in the public directory, while configuration files are located in the config directory. Laravel's structure encourages the use of service providers and facades for extending functionality, promoting a clean and modular codebase that's easy to maintain and scale.
+
+```
+finance_app/
+│
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   ├── IncomeController.php
+│   │   │   └── ExpenseController.php
+│   │   └── Requests/
+│   ├── Models/
+│   │   ├── Income.php
+│   │   └── Expense.php
+│   └── Providers/
+│
+├── config/
+│
+├── database/
+│   ├── migrations/
+│   └── seeders/
+│
+├── public/
+│
+├── resources/
+│   ├── views/
+│   │   ├── incomes/
+│   │   ├── expenses/
+│   │   └── layouts/
+│   ├── lang/
+│   └── js/
+│
+├── routes/
+│   ├── web.php
+│   └── api.php
+│
+├── storage/
+│
+├── tests/
+│
+├── vendor/
+│
+├── .env
+├── artisan
+├── composer.json
+└── package.json
+```
 
 ## Template Engine
 
