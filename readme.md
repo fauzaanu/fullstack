@@ -295,8 +295,7 @@ and API authentication methods like JWT.
 
 ## Admin Interface
 
-**Django** has a built-in, customizable admin interface, which is a standout feature offering immediate productivity
-gains.
+**Django** has a built-in, customizable admin interface which is enough for most teams with developers. The design sucks yet offers all sorts of CRUD operations within this interface.
 
 **Laravel** and **Ruby on Rails** rely on packages or gems for admin interfaces. Laravel has multiple first-party
 packages for admin panels, like Nova and Voyager.
