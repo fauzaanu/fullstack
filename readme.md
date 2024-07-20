@@ -1,8 +1,7 @@
 This repo compares the top three batteries included fullstack web frameworks:
 **Ruby on Rails**, **Django**, and **Laravel**.
 
-The goal is not to determine the best framework, but to have a basic understanding of all three frameworks from one
-place.
+The goal of this repo is to provide a basic understanding of all three frameworks from one place.
 
 
 ## Table of Contents
