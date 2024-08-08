@@ -345,7 +345,7 @@ All three frameworks can scale effectively with proper architecture.
 
 1. Instagram - Django - [Carl Meyer about Django @ Instagram at Django: Under The Hood 2016](https://youtu.be/lx5WQjXLlq8)
 2. Shopify - Rails - [RailsConf 2022 - Shopify](https://youtu.be/p_C6BcKX0qs?list=PLr8d6l1sJufdKr-d_SG7lrycsHwMMEDPl)
-3. ...
+3. Threads - Django - [The inside story of Meta’s newest social app](https://engineering.fb.com/2023/09/07/culture/threads-inside-story-metas-newest-social-app/)
 
 
 ## Deployment Ease
