@@ -73,15 +73,11 @@ sponsors.
 The key difference is that Django's "View" takes on the role of the Controller, while its "Template" handles the
 presentation logic that would typically be in the View of an MVC framework.
 
-This separation in Django can lead to cleaner, more focused code by clearly distinguishing between request handling
-logic (Views) and presentation logic (Templates).
-
 ## ORM
 
 **Laravel** uses Eloquent, which follows the Active Record pattern.
 
-**Django** uses its own ORM that follows the Data
-Mapper pattern.
+**Django** uses its own ORM that follows the Data Mapper pattern.
 
 **Ruby on Rails** also uses the Active Record pattern.
 
@@ -98,8 +94,7 @@ Learn more from the book, [Patterns of Enterprise Application Architecture](http
 It was Ruby on Rails who pioneered and popularized the concept of database migrations in web frameworks.
 
 Django has automated migrations
-_Django automates migrations by making migrations be a replica of the models.py file within each of the apps. The state of the current database schema can be observed from models.py at all times. Automating stuff through ORM is common in django and is also present in 
-model forms._
+_Django automates migrations, based on models.py file which contains a replica of how the database looks like as of now. For JS devs, this is exactly how Prisma ORM works.(current state of db is in a file). Contrary to this Ruby and Laravel require additional tools and IDE assitance to reveal the db structure in code. Sometimes they are a terminal command and not exactly code._
 
 ## Forms
 
@@ -109,7 +104,7 @@ _Generic views in django are views provided by the framework for really common o
 
 Ruby on rails have form_for helper which generates a form html based on models, quite like django forms and includes validation as well. Rails require a little bit more manual effort than django however to get it setup.
 
-Laravel unlike rails and django lacks tight integration between models and forms. Laravel Collective provides a form builder package for easier form creation. There are third party packages in Laravel ecosystem that implements django model forms. Laravel does offer good form validation and handling capabilities.
+Laravel unlike rails and django lacks tight integration between models and forms. Laravel Collective provides a form builder package for easier form creation. There are third party packages in Laravel ecosystem that implements django model forms.
 
 ## Routing
 
@@ -327,7 +322,10 @@ of gems. **Laravel** is known for rapid adoption of new features, and **Django**
 
 **Laravel** and **Ruby on Rails** are generally considered easier for beginners. 
 
-**Django** has a steeper initial learning curve but offers powerful capabilities with a lot of productivity gains once mastered.
+**Django** has a steeper initial learning curve.
+
+> Personal Thoughts:
+> When it comes to Django's learning curve, the "Django way" of doing things are hard to accept initially when you have not faced those situations yourself. Accepting the Django Way is stable and has many perks but not know the reasons for why Django wants you to do certain things a certain way is why Django may seem to be not very easy to figure out at first.
 
 ## Performance
 
