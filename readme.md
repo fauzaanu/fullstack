@@ -56,7 +56,7 @@ great influence on the community.
 ## Funding
 
 **Laravel** generates revenue through the sale of commercial products like Forge, Envoyer, Nova, and Spark, in addition
-to sponsorships and donations.
+to sponsorships and donations. In 2024 Sept, Taylor Announced that Laravel has raised a 57M$ Series A in Partnership with Accel.
 
 **Django** operates solely through donations and sponsorships to a non-profit foundation, the Django Software
 Foundation.
