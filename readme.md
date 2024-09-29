@@ -70,18 +70,20 @@ sponsors.
 
 **Django** uses MTV (Model-Template-View) pattern, which is similar but emphasizes templates.
 
-The key difference is that Django's "View" takes on the role of the Controller, while its "Template" handles the
+Django is not traditional MVC technically. The key difference is that Django's "View" takes on the role of the Controller, while its "Template" handles the
 presentation logic that would typically be in the View of an MVC framework.
 
 ## ORM
 
 **Laravel** uses Eloquent, which follows the Active Record pattern.
 
-**Django** uses its own ORM that follows the Data Mapper pattern.
-
 **Ruby on Rails** also uses the Active Record pattern.
 
+**Django** uses Django ORM that follows the Data Mapper pattern.
+
 Learn more from the book, [Patterns of Enterprise Application Architecture](https://www.amazon.com/Patterns-Enterprise-Application-Architecture-Martin/dp/0321127420) where Martin Fowler coined the terms [Active Record](https://en.wikipedia.org/wiki/Active_record_pattern) and [Data Mapper patterns](https://en.wikipedia.org/wiki/Data_mapper_pattern).
+
+It is Django that deviates from Rails and Laravel by keeping the schema in one place. (models.py). Django is in that regard similiar to Prisma as you can always refer to the schema while developing. 
 
 ## Database Migrations
 
